@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Генеральчик](https://up.htmlacademy.ru/adaptive/11/user/227504).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Пушкарев](https://up.htmlacademy.ru/adaptive/11/user/87167).
 
 ---
 
