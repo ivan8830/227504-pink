@@ -6,33 +6,35 @@
   </head>
   <body>
     <header class="page-header">
-      <h1 class="page-header__title">PINK</h1>
-			<nav class="main-nav">
-		  	<span class="main-nav__toggler"></span>
-        	<div class="main-nav__wrapper">
-          	<ul class="main-nav__list">
-							<li class="main-nav__item">
-								<a href="">Главная</a>
-							</li>
-							<li class="main-nav__item">
-								<a href="">Фотографии</a>
-							</li>
-							<li class="main-nav__item main-nav__item--active">
-								<a>Конкурс</a>
-							</li>
-							<li class="main-nav__item">
-								<a href="">HTML academy</a>
-							</li>
-          	</ul>
-        	</div>  
-			</nav>
+			<div class="wrapper">
+        <a href="#"><img src="http://placehold.it/150x100"></a>
+        <a href="#">Бургер</a>
+      </div>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a href="">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a>Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="">HTML academy</a>
+            </li>
+          </ul>
+        </div>  
+      </nav>
 	  </header>
 		<main class="page-main">
       <section class="form">
-        <header class="form-header">
+        <div class="form-header">
           <p class="form-header__text">Конкурс на самое безбашенное путешествие с Пинк</p>
-        </header>
-        <main class="form-main">
+        </div>
+        <div class="form-main">
           <div class="form-main__conditions">
             <p class="form-main__text">
               Поделитесь своей историей и получите шаанс выйграть ценный приз - 1000 миль на вашу бонусную карту!
@@ -100,29 +102,29 @@
               <p class="form-main__ach-text">С каким приложением путешествовали</p>
               <ul class="form-main__list">
                 <li class="form-main__item">
-                  <input type="radio" name="attachment" value="Pink для iOS" id="iOS" checked>
-								  <label for="iOS">Pink для iOS</label>
+                  <input type="radio" name="attachment" value="Pink для iOS" id="ios" checked>
+								  <label for="ios">Pink для iOS</label>
                 </li>
                 <li class="form-main__item">
                   <input type="radio" name="attachment" value="Pink для Android" id="android">
 								  <label for="android">Pink для Android</label>
                 </li>
                 <li class="form-main__item">
-                  <input type="radio" name="attachment" value="Windows Phone" id="Windows">
+                  <input type="radio" name="attachment" value="Windows Phone" id="windows">
 								  <label for="windows">Windows Phone</label>
                 </li>
               </ul>
             </div>
             <div class="form-main__anketa">
               <label for="emotions">Опишите свои эмоции</label>
-              <textarea id="emotions" name="emotions" rows="7" placeholder="Можно прям в красках, не стесняясь выражений"></textarea>
+              <textarea id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь выражений"></textarea>
             </div>
             <div class="form-main__btn">
-              <input type="button" value="Отправить форму">
+              <input type="submit" value="Отправить форму">
             </div>
             <p class="form-main__bottom"><sup>*</sup> — обязательные поля</p>
           </form>
-        </main>
+        </div>
       </section>
 		</main>
     <footer class="form-footer">
@@ -131,15 +133,15 @@
           <img src="http://placehold.it/150x100">
         </div>
         <div class="form‐footer__social">
-          <span class="social‐links">
+          <div class="social‐links">
             <a class="social‐link social‐link‐‐vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
             <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
             <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-          </span>
+          </div>
         </div>
         <div class="form‐footer__copyright">
           <p>Разработано:</p>
-          <a href=""><img src="http://placehold.it/150x100"></a>
+          <a href="#"><img src="http://placehold.it/150x100"></a>
         </div> 
       </div>
     </footer>
