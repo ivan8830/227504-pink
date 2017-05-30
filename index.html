@@ -6,35 +6,33 @@
   </head>
   <body>
     <header class="page-header">
+      <h1 class="page-header__title">PINK</h1>
       <div class="wrapper">
         <img src="http://placehold.it/150x100">
         <a href="">Бургер</a>
       </div>
-      <h1 class="page-header__title">PINK</h1>
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="">HTML academy</a>
-            </li>
-          </ul>
-        </div>  
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="">HTML academy</a>
+          </li>
+        </ul> 
       </nav>
-			<div class="page-header__logo">
-				<img src="http://placehold.it/150x100">
-      </div>
 	  </header>
 		<main class="page-main">
 			<section class="intro">
+        <div class="page-header__logo">
+				  <img src="http://placehold.it/150x100">
+        </div>
 				<a class="intro__btn" href="#">Скачать приложение</a>
 					<div class="os">
 						<a class="os__item os__item--apple" href="">apple</a>
@@ -68,7 +66,7 @@
           </div>
           <div class="reviews">
             <div class="container">
-              <div class="reviews__wrapper">
+              <div class="reviews__wrapper slider">
                 <div class="reviews__item slider__item">
                   <h3 class="reviews__name">Николай Петров</h3>
                   <p>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
@@ -98,9 +96,18 @@
                   <p>3,99 USD</p>
                 </div>
                 <div class="rate__item-options">
-                  <div class="rate__row">Розовый фильтр</div><div class="check"></div>
-                  <div class="rate__row">Смайлики</div><div class="check"></div>
-                  <div class="rate__row">Комментарии</div><div class="cross"></div>
+                  <div class="rate__row">
+                    <span class="rate__cell">Розовый фильтр</span>
+                    <span class="rate__cell">check</span>
+                  </div>
+                  <div class="rate__row">
+                    <span class="rate__cell">Смайлики</span>
+                    <span class="rate__cell">check</span>
+                  </div>
+                  <div class="rate__row">
+                    <span class="rate__cell">Комментарий</span>
+                    <span class="rate__cell">cross</span>
+                  </div>     
                 </div>
               </div>
             </div>
