@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
 			<div class="wrapper">
-        <a href="#"><img src="http://placehold.it/150x100"></a>
-        <a href="#">Бургер</a>
+        <a href="#"><img src="img/logo-pink-white-mobile.svg" width="76px" height="24px"></a>
+        <a href="#"><img src="img/icon-menu-burger.svg" width="50px" height="24px"></a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -27,7 +28,7 @@
         </ul>
       </nav>
 	  </header>
-		<main class="page-main">
+		<main class="form-conteiner">
       <section class="form">
         <div class="form-header">
           <p class="form-header__text">Конкурс на самое безбашенное путешествие с Пинк</p>
@@ -35,28 +36,28 @@
         <div class="form-main">
           <div class="form-main__conditions">
             <p class="form-main__text">
-              Поделитесь своей историей и получите шаанс выйграть ценный приз - 1000 миль на вашу бонусную карту!
+              Поделитесь своей историей и получите шанс выйграть ценный приз - 1000 миль на вашу бонусную карту!
             </p>
           </div>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <div class="form-main__anketa">
-              <ul class="form-main__list">
+              <ul class="form-main__anketa-list">
                 <li class="form-main__item">
-                  <label for="surname">Фамилия:</label>
+                  <label for="surname">Фамилия:</label><br>
                   <input type="text" id="surname" placeholder="Укажите фамилию<sup>*</sup>" required>
                 </li>
                 <li class="form-main__item">
-                  <label for="name">Имя:</label>
+                  <label for="name">Имя:</label><br>
                   <input type="text" id="name" placeholder="Введите ваше имя<sup>*</sup>" required>
                 </li>
                 <li class="form-main__item">
-                  <label for="patronymic">Имя:</label>
+                  <label for="patronymic">Отчество:</label><br>
                   <input type="text" id="patronymic" placeholder="Ну и отчество тоже" required>
                 </li>
               </ul>
             </div>
             <div class="form-main__achievements">
-              <p class="form-main__ach-text">Ваши безбашенные достижения в путешествии</p>
+              <p class="form-main__ach-text">Ваши безбашенные<br> достижения в путешествии</p>
               <ul class="form-main__list">
                 <li class="form-main__item">
                   <input type="checkbox" name="selfie" id="selfie" checked>
@@ -85,19 +86,19 @@
               </ul>
             </div>
             <div class="form-main__anketa">
-              <ul class="form-main__list">
+              <ul class="form-main__anketa-list">
                 <li class="form-main__item">
-                  <label for="number">Номер телефона</label>
+                  <label for="number">Номер телефона</label><br>
                   <input type="tel" id="number"  pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста" required>
                 </li>
                 <li class="form-main__item">
-                  <label for="address">Адрес почты</label>
+                  <label for="address">Адрес почты</label><br>
                   <input type="email" id="address" placeholder="Введите почту<sup>*</sup>" required>
                 </li>
               </ul>
             </div>
             <div class="form-main__achievements">
-              <p class="form-main__ach-text">С каким приложением путешествовали</p>
+              <p class="form-main__ach-text">С каким приложением<br> путешествовали</p>
               <ul class="form-main__list">
                 <li class="form-main__item">
                   <input type="radio" name="attachment" value="Pink для iOS" id="ios" checked>
@@ -114,13 +115,13 @@
               </ul>
             </div>
             <div class="form-main__anketa">
-              <label for="emotions">Опишите свои эмоции</label>
+              <label for="emotions" class="form-main__ach-text">Опишите свои эмоции</label>
               <textarea id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь выражений"></textarea>
             </div>
             <div class="form-main__btn">
               <input type="submit" value="Отправить форму">
             </div>
-            <p class="form-main__bottom"><sup>*</sup> — обязательные поля</p>
+            <p class="form-main__btn-text"><sup>*</sup> — обязательные поля</p>
           </form>
         </div>
       </section>
@@ -128,18 +129,18 @@
     <footer class="form-footer">
       <div class="form-footer__wrapper">
         <div class="form-footer__partner">
-          <img src="http://placehold.it/150x100">
+          <img src="img/logo-pink-blue-mobile.svg" width="147px" height="40px">
         </div>
         <div class="form‐footer__social">
           <div class="social‐links">
-            <a class="social‐link social‐link‐‐vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social‐link social‐link‐‐vk" href="https://twitter.com/htmlacademy">Мы в твиттере</a>
             <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            <a class="social‐link social‐link‐‐in" href="https://www.youtube.com/htmlacademy">Мы в youtube</a>
           </div>
         </div>
         <div class="form‐footer__copyright">
-          <p>Разработано:</p>
-          <a href="#"><img src="http://placehold.it/150x100"></a>
+          <p class="form-footer__title">Разработано:</p>
+          <a href="#"><img src="img/logo-htmlacademy.svg" width="27px" height="34px"></a>
         </div> 
       </div>
     </footer>
