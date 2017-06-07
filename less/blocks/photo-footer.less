@@ -1,3 +1,8 @@
+.photo-footer__wrapper {
+  .container();
+  height: 929px;
+}
+
 .photo-footer__slogan {
   font-size: 14px;
   text-align: center;
@@ -6,4 +11,20 @@
 
 .photo-footer__editor {
   text-align: center;
+}
+
+@media @tablet-widths {
+  .photo-footer__wrapper {
+    height: 705px;
+  }
+  
+  .photo_footer__bum {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media @desktop-widths {
+  .photo-footer__wrapper {
+    height: 700px;
+  }
 }

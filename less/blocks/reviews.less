@@ -1,6 +1,8 @@
 .reviews__container {
+  .container();
   background-color: #ffffff;
   margin-top: -85px;
+  height: 378px;
   z-index: 1;
 }
 
@@ -12,7 +14,19 @@
 }
 
 .reviews__item {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+}
+
+.reviews__item:nth-child(2) {
+  display: none;
+}
+
+.reviews__item:nth-child(3) {
+  display: none;
 }

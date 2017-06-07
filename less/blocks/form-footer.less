@@ -1,3 +1,8 @@
+.form-footer__wrapper {
+  .container();
+  height: 290px;
+}
+
 .form-footer {
   text-align: center;
 }
@@ -9,4 +14,19 @@
 
 .form‐footer__copyright img {
   color: #d22856;
+}
+
+@media @tablet-widths {
+  .form-footer__wrapper {
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media @desktop-widths {
+  .form-footer__wrapper {
+    height: 150px;
+  }
 }
