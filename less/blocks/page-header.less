@@ -1,9 +1,55 @@
-.wrapper {
+.page-header {
+  margin-bottom: -110px;
+  min-width: 320px;
+  
+}
+
+
+.page-header__wrapper {
+  .container();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 66px;
   background-color: #1d2631;
-  margin-bottom: -65px;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 0.3;
+  box-sizing: border-box;
 }
+
+.page-header__logo {
+  width: 76px;
+  height: 24px;  
+}
+
 
 nav {
   display: none;
+}
+
+.page-header__title{
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} 
+
+@media @tablet-widths {
+  .page-header__wrapper {
+    height: 110px;
+  }
+}
+
+@media @desktop-widths {
+  .page-header__wrapper {
+    height: 110px;
+  }
 }

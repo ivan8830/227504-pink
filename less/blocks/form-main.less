@@ -1,11 +1,15 @@
-.form-main__conditions {
-  vertical-align: middle;
+.form__wrapper {
+  .container();
 }
 
 .form-main__text {
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+}
+
+.form-main__text-hidden {
+  font-size: 0;
 }
 
 .form-main ul {
@@ -52,4 +56,35 @@
 .form-main__btn-text sup {
   color: #d22856;
   font-size: 14px;
+}
+
+@media @tablet-widths {
+  .form__wrapper {
+    height: 2020px;
+  }
+  .form-main__text-hidden {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media @desktop-widths {
+  .form__wrapper {
+    height: 1315px;
+  }
+  .form-main__text-hidden {
+    font-size: 14px;
+  }
+  
+  .form-main__interview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .form-main__anketa {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

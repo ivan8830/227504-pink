@@ -2,13 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta
+ name="viewport"
+ content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-			<div class="wrapper">
-        <a href="#"><img src="img/logo-pink-white-mobile.svg" width="76px" height="24px"></a>
+      <h1 class="page-header__title">PINK</h1>
+      <div class="page-header__wrapper">
+        <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="76px" height="24px">
         <a href="#"><img src="img/icon-menu-burger.svg" width="50px" height="24px"></a>
       </div>
       <nav class="main-nav">
@@ -30,123 +34,127 @@
 	  </header>
     <main class="photo-main">
       <section class="tape">
-        <div class="tape-header">
-          <p class="tape-header__text">Фотографии пользователей</p>
-        </div>
-        <div class="tape-main">
-          <div class="tape-main__conditions">
-            <p class="tape-main__text">Взгляните на фотографии, которые выкладывают пользователи!</p>
-            <p class="tape-main__text">Видите как не хватает ваших?</p>
+        <div class="tape__wrapper">
+          <div class="tape-header">
+            <p class="tape-header__text">Фотографии пользователей</p>
           </div>
-          <div class="tape-main__gallery">
-            <div class="tape-main__list">
-              <div class="tape-main__item">
-                <img class="tape-main__panorama" src="img/panorama-mobile@1x.jpg" width="320px" height="137px">
-                <div class="tape-main__content">
-                  <p class="tape-main__autor-name">Анна</p>
-                  <p class="tape-main__item-date">(5 минут назад)</p>
-                  <p class="tape-main__comment">
-                    Прыгать или нет? Напишите в коментарии свой совет и смтрите прямую трансляцию в перископеб задайте свои вопросы!
-                  </p>
-                  <div class="tape-main__heart">
-                    <img class="heart" src="img/icon-heart.svg">
-                  </div>
-                  <p class="tape-main__heart-text">Нравится: 215</p>
-                </div>
-              </div>
-              <div class="tape-main__item">
-                <img class="tape-main__foto" src="img/photo-1-mobile@1x.jpg" width="280px" height="180px">
-                <div class="tape-main__content">
-                  <p class="tape-main__autor-name">Левон</p>
-                  <p class="tape-main__item-date">(5 часов назад)</p>
-                  <p class="tape-main__comment">
-                    Вчера он на луну летал, сегодня в руки к нам попал.
-                  </p>
-                  <div class="tape-main__heart">
-                    <img class="heart" src="img/icon-heart.svg">
-                  </div>
-                  <p class="tape-main__heart-text">Нравится: 356</p>
-                </div>
-              </div>
-              <div class="tape-main__item">
-                <img class="tape-main__foto" src="img/photo-2-mobile@1x.jpg" width="280px" height="180px">
-                <div class="tape-main__content">
-                  <p class="tape-main__autor-name">Антон</p>
-                  <p class="tape-main__item-date">(12 часов назад)</p>
-                  <p class="tape-main__comment">
-                    Соседи будут рады!
-                  </p>
-                  <div class="tape-main__heart">
-                    <img class="heart" src="img/icon-heart.svg">
-                  </div>
-                  <p class="tape-main__heart-text">Нравится: 666</p>
-                </div>
-              </div>
-              <div class="tape-main__item">
-                <img class="tape-main__foto" src="img/photo-3-mobile@1x.jpg" width="280px" height="180px">
-                <div class="tape-main__content">
-                  <p class="tape-main__autor-name">Борис</p>
-                  <p class="tape-main__item-date">(20 часов назад)</p>
-                  <p class="tape-main__comment">
-                    Здесь могла быть ваша цитата о высоком и вечном.
-                  </p>
-                  <div class="tape-main__heart">
-                    <img class="heart" src="img/icon-heart.svg">
-                  </div>
-                  <p class="tape-main__heart-text">Нравится: 215</p>
-                </div>
-              </div>
-              <div class="tape-main__item">
-                <img class="tape-main__foto" src="img/photo-4-mobile@1x.jpg" width="280px" height="180px">
-                <div class="tape-main__content">
-                  <p class="tape-main__autor-name">Сергей</p>
-                  <p class="tape-main__item-date">(25 часов назад)</p>
-                  <p class="tape-main__comment">
-                    Самая кубанская в мире!
-                  </p>
-                  <div class="tape-main__heart">
-                    <img class="heart" src="img/icon-heart.svg">
-                  </div>
-                  <p class="tape-main__heart-text">Нравится: 4</p>
-                </div>
-              </div>
-              <div class="tape-main__item">
-                <img class="tape-main__foto" src="img/photo-5-mobile@1x.jpg" width="280px" height="180px">
-                <div class="tape-main__content">
-                  <p class="tape-main__autor-name">Максим</p>
-                  <p class="tape-main__item-date">(40часов назад)</p>
-                  <p class="tape-main__comment">
-                    Где снег-то?
-                  </p>
-                  <div class="tape-main__heart">
-                    <img class="heart" src="img/icon-heart.svg">
-                  </div>
-                  <p class="tape-main__heart-text">Нравится: 150</p>
-                </div>
-              </div>
-              <div class="tape-main__item">
-                <img class="tape-main__foto" src="img/photo-6-mobile@1x.jpg" width="280px" height="180px">
-                <div class="tape-main__content">
-                  <p class="tape-main__autor-name">Надежда</p>
-                  <p class="tape-main__item-date">(45 часов назад)</p>
-                  <p class="tape-main__comment">
-                    Всем GM и взаимные лайки!
-                  </p>
-                  <div class="tape-main__heart">
-                    <img class="heart" src="img/icon-heart.svg">
-                  </div>
-                  <p class="tape-main__heart-text">Нравится: 2560</p>
-                </div>
-              </div>
+          <div class="tape-main">
+            <div class="tape-main__conditions">
+              <p class="tape-main__text">Взгляните на фотографии, которые выкладывают пользователи!</p>
+              <p class="tape-main__text">Видите как не хватает ваших?</p>
             </div>
-          </div>    
+            <div class="tape-main__gallery">
+              <div class="tape-main__list">
+                <div class="tape-main__item">
+                  <img class="tape-main__panorama" src="img/panorama-mobile@1x.jpg" width="320px" height="137px">
+                  <div class="tape-main__content">
+                    <p class="tape-main__autor-name">Анна</p>
+                    <p class="tape-main__item-date">(5 минут назад)</p>
+                    <p class="tape-main__comment">
+                      Прыгать или нет? Напишите в коментарии свой совет и смтрите прямую трансляцию в перископеб задайте свои вопросы!
+                    </p>
+                    <div class="tape-main__heart">
+                      <img class="heart" src="img/icon-heart.svg">
+                    </div>
+                    <p class="tape-main__heart-text">Нравится: 215</p>
+                  </div>
+                </div>
+                <div class="tape-main__item">
+                  <img class="tape-main__foto" src="img/photo-1-mobile@1x.jpg" width="280px" height="180px">
+                  <div class="tape-main__content">
+                    <p class="tape-main__autor-name">Левон</p>
+                    <p class="tape-main__item-date">(5 часов назад)</p>
+                    <p class="tape-main__comment">
+                      Вчера он на луну летал, сегодня в руки к нам попал.
+                    </p>
+                    <div class="tape-main__heart">
+                      <img class="heart" src="img/icon-heart.svg">
+                    </div>
+                    <p class="tape-main__heart-text">Нравится: 356</p>
+                  </div>
+                </div>
+                <div class="tape-main__item">
+                  <img class="tape-main__foto" src="img/photo-2-mobile@1x.jpg" width="280px" height="180px">
+                  <div class="tape-main__content">
+                    <p class="tape-main__autor-name">Антон</p>
+                    <p class="tape-main__item-date">(12 часов назад)</p>
+                    <p class="tape-main__comment">
+                      Соседи будут рады!
+                    </p>
+                    <div class="tape-main__heart">
+                      <img class="heart" src="img/icon-heart.svg">
+                    </div>
+                    <p class="tape-main__heart-text">Нравится: 666</p>
+                  </div>
+                </div>
+                <div class="tape-main__item">
+                  <img class="tape-main__foto" src="img/photo-3-mobile@1x.jpg" width="280px" height="180px">
+                  <div class="tape-main__content">
+                    <p class="tape-main__autor-name">Борис</p>
+                    <p class="tape-main__item-date">(20 часов назад)</p>
+                    <p class="tape-main__comment">
+                      Здесь могла быть ваша цитата о высоком и вечном.
+                    </p>
+                    <div class="tape-main__heart">
+                      <img class="heart" src="img/icon-heart.svg">
+                    </div>
+                    <p class="tape-main__heart-text">Нравится: 215</p>
+                  </div>
+                </div>
+                <div class="tape-main__item">
+                  <img class="tape-main__foto" src="img/photo-4-mobile@1x.jpg" width="280px" height="180px">
+                  <div class="tape-main__content">
+                    <p class="tape-main__autor-name">Сергей</p>
+                    <p class="tape-main__item-date">(25 часов назад)</p>
+                    <p class="tape-main__comment">
+                      Самая кубанская в мире!
+                    </p>
+                    <div class="tape-main__heart">
+                      <img class="heart" src="img/icon-heart.svg">
+                    </div>
+                    <p class="tape-main__heart-text">Нравится: 4</p>
+                  </div>
+                </div>
+                <div class="tape-main__item">
+                  <img class="tape-main__foto" src="img/photo-5-mobile@1x.jpg" width="280px" height="180px">
+                  <div class="tape-main__content">
+                    <p class="tape-main__autor-name">Максим</p>
+                    <p class="tape-main__item-date">(40часов назад)</p>
+                    <p class="tape-main__comment">
+                      Где снег-то?
+                    </p>
+                    <div class="tape-main__heart">
+                      <img class="heart" src="img/icon-heart.svg">
+                    </div>
+                    <p class="tape-main__heart-text">Нравится: 150</p>
+                  </div>
+                </div>
+                <div class="tape-main__item">
+                  <img class="tape-main__foto" src="img/photo-6-mobile@1x.jpg" width="280px" height="180px">
+                  <div class="tape-main__content">
+                    <p class="tape-main__autor-name">Надежда</p>
+                    <p class="tape-main__item-date">(45 часов назад)</p>
+                    <p class="tape-main__comment">
+                      Всем GM и взаимные лайки!
+                    </p>
+                    <div class="tape-main__heart">
+                      <img class="heart" src="img/icon-heart.svg">
+                    </div>
+                    <p class="tape-main__heart-text">Нравится: 2560</p>
+                  </div>
+                </div>
+              </div>
+            </div>    
+          </div>
         </div>
-        <div class="photo-footer">
+      </section>
+      <section class="photo-footer">
+        <div class="photo-footer__wrapper">
           <div class="photo-footer__slogan">
             <p class="photo-footer__text">Затмите их всех!</p>
             <p class="photo-footer__text">Выкладывай все, что находится в телефоне!</p>
           </div>
-          <form action="https://echo.htmlacademy.ru/" method="post">
+          <form class="photo_footer__bum" action="https://echo.htmlacademy.ru/" method="post">
             <div class="photo-footer__gallery">
               <img src="img/photo-7-mobile@1x.jpg" width="280px" height="374px">
             </div>

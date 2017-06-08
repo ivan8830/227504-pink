@@ -1,0 +1,24 @@
+.effect__wrapper {
+  .container();
+  display: none;
+}
+
+@media @tablet-widths {
+  .effect__wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+  
+  .effect__clock {
+    background-image: url(../../img/iphone-screen-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    padding-left: 310px;
+  }
+}
+
+@media @desktop-widths {
+}
