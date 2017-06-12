@@ -13,8 +13,8 @@
     <header class="page-header">
       <h1 class="page-header__title">PINK</h1>
       <div class="page-header__wrapper">
-        <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="76px" height="24px">
-        <a href="#"><img src="img/icon-menu-burger.svg" width="50px" height="24px"></a>
+        <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="76" height="24">
+        <a href="#"><img class="page-header__burger" src="img/icon-menu-burger.svg" width="50" height="24"></a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -112,15 +112,40 @@
             </div>
           </div>
           <div class="reviews__pagination slider__paginator">
-            <span class="slider__pagination-item slider__pagination-item--active"></span>
-            <span class="slider__pagination-item"></span>
-            <span class="slider__pagination-item"></span>
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+              <label for="btn-3"></label>
+            </div>
           </div>
         </div>
       </section>
          <section class="rate">
-           <div class="rate__conteiner">
+           <div class="rate__container">
              <div class="rate__wrapper slider">
+               <div class="rate__item slider__item">
+                 <div class="rate__item-title">
+                   <h4 class="rate__item-cap">База</h4>
+                   <p class="rate__item-price">1,99 USD</p>
+                 </div>
+                 <div class="rate__item-options ">
+                   <div class="rate__row">
+                     <span class="rate__cell">Розовый фильтр</span>
+                     <span class="rate__cell">check</span>
+                   </div>
+                   <div class="rate__row">
+                     <span class="rate__cell">Смайлики</span>
+                     <span class="rate__cell">cross</span>
+                   </div>
+                   <div class="rate__row">
+                     <span class="rate__cell">Комментарий</span>
+                     <span class="rate__cell">cross</span>
+                   </div>     
+                 </div>
+               </div>
                <div class="rate__item slider__item">
                  <div class="rate__item-title">
                    <h4 class="rate__item-cap">Стандарт</h4>
@@ -141,11 +166,36 @@
                    </div>     
                  </div>
                </div>
+               <div class="rate__item slider__item">
+                 <div class="rate__item-title">
+                   <h4 class="rate__item-cap">Анлим</h4>
+                   <p class="rate__item-price">9,99 USD</p>
+                 </div>
+                 <div class="rate__item-options">
+                   <div class="rate__row">
+                     <span class="rate__cell">Розовый фильтр</span>
+                     <span class="rate__cell">check</span>
+                   </div>
+                   <div class="rate__row">
+                     <span class="rate__cell">Смайлики</span>
+                     <span class="rate__cell">check</span>
+                   </div>
+                   <div class="rate__row">
+                     <span class="rate__cell">Комментарий</span>
+                     <span class="rate__cell">check</span>
+                   </div>     
+                 </div>
+               </div>
              </div>
-             <div class="rate__pagination slider__paginator">
-               <span class="slider__pagination-item"></span>
-               <span class="slider__pagination-item slider__pagination-item--active"></span>
-               <span class="slider__pagination-item"></span>
+             <div class="rate__pagination slider__paginator-rate">
+              <input type="radio" id="btn-1" name="toggle" checked>
+              <input type="radio" id="btn-2" name="toggle">
+              <input type="radio" id="btn-3" name="toggle">
+              <div class="slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>
+              </div>
              </div>
          </div>
       </section>
@@ -171,7 +221,7 @@
           </ul>
         </div>
         <div class="map">
-          <img src="img/bg-map-mobile@1x.png" width="320px;" height="200px">тут будет скрипт
+          <img src="img/bg-map-mobile@1x.png" width="320px;" height="200px">
         </div>
       </div>
     </footer>

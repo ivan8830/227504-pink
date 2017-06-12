@@ -13,7 +13,7 @@
       <h1 class="page-header__title">PINK</h1>
       <div class="page-header__wrapper">
         <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="76px" height="24px">
-        <a href="#"><img src="img/icon-menu-burger.svg" width="50px" height="24px"></a>
+        <a href="#"><img class="page-header__burger" src="img/icon-menu-burger.svg" width="50px" height="24px"></a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -46,7 +46,7 @@
             <div class="tape-main__gallery">
               <div class="tape-main__list">
                 <div class="tape-main__item">
-                  <img class="tape-main__panorama" src="img/panorama-mobile@1x.jpg" width="320px" height="137px">
+                  <img class="tape-main__panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137">
                   <div class="tape-main__content">
                     <p class="tape-main__autor-name">Анна</p>
                     <p class="tape-main__item-date">(5 минут назад)</p>
@@ -54,10 +54,10 @@
                       Прыгать или нет? Напишите в коментарии свой совет и смтрите прямую трансляцию в перископеб задайте свои вопросы!
                     </p>
                     <div class="tape-main__heart">
-                      <img class="heart" src="img/icon-heart.svg">
+                      <img class="heart" src="img/icon-heart.svg" width="13" height="12">
+                      <p class="tape-main__heart-text">Нравится: 215</p>
                     </div>
-                    <p class="tape-main__heart-text">Нравится: 215</p>
-                  </div>
+                  </div> 
                 </div>
                 <div class="tape-main__item">
                   <img class="tape-main__foto" src="img/photo-1-mobile@1x.jpg" width="280px" height="180px">
@@ -69,8 +69,8 @@
                     </p>
                     <div class="tape-main__heart">
                       <img class="heart" src="img/icon-heart.svg">
+                      <p class="tape-main__heart-text">Нравится: 356</p>
                     </div>
-                    <p class="tape-main__heart-text">Нравится: 356</p>
                   </div>
                 </div>
                 <div class="tape-main__item">
@@ -83,8 +83,8 @@
                     </p>
                     <div class="tape-main__heart">
                       <img class="heart" src="img/icon-heart.svg">
+                      <p class="tape-main__heart-text">Нравится: 666</p>
                     </div>
-                    <p class="tape-main__heart-text">Нравится: 666</p>
                   </div>
                 </div>
                 <div class="tape-main__item">
@@ -97,8 +97,8 @@
                     </p>
                     <div class="tape-main__heart">
                       <img class="heart" src="img/icon-heart.svg">
+                      <p class="tape-main__heart-text">Нравится: 215</p>
                     </div>
-                    <p class="tape-main__heart-text">Нравится: 215</p>
                   </div>
                 </div>
                 <div class="tape-main__item">
@@ -111,8 +111,8 @@
                     </p>
                     <div class="tape-main__heart">
                       <img class="heart" src="img/icon-heart.svg">
+                      <p class="tape-main__heart-text">Нравится: 4</p>
                     </div>
-                    <p class="tape-main__heart-text">Нравится: 4</p>
                   </div>
                 </div>
                 <div class="tape-main__item">
@@ -125,12 +125,12 @@
                     </p>
                     <div class="tape-main__heart">
                       <img class="heart" src="img/icon-heart.svg">
+                      <p class="tape-main__heart-text">Нравится: 150</p>
                     </div>
-                    <p class="tape-main__heart-text">Нравится: 150</p>
                   </div>
                 </div>
                 <div class="tape-main__item">
-                  <img class="tape-main__foto" src="img/photo-6-mobile@1x.jpg" width="280px" height="180px">
+                  <img class="tape-main__foto" src="img/photo-6-mobile@1x.jpg" width="280" height="180">
                   <div class="tape-main__content">
                     <p class="tape-main__autor-name">Надежда</p>
                     <p class="tape-main__item-date">(45 часов назад)</p>
@@ -139,8 +139,8 @@
                     </p>
                     <div class="tape-main__heart">
                       <img class="heart" src="img/icon-heart.svg">
+                      <p class="tape-main__heart-text">Нравится: 2560</p>
                     </div>
-                    <p class="tape-main__heart-text">Нравится: 2560</p>
                   </div>
                 </div>
               </div>
@@ -154,9 +154,9 @@
             <p class="photo-footer__text">Затмите их всех!</p>
             <p class="photo-footer__text">Выкладывай все, что находится в телефоне!</p>
           </div>
-          <form class="photo_footer__bum" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="photo-footer__bum" action="https://echo.htmlacademy.ru/" method="post">
             <div class="photo-footer__gallery">
-              <img src="img/photo-7-mobile@1x.jpg" width="280px" height="374px">
+              <img src="img/photo-7-mobile@1x.jpg" width="280" height="374">
             </div>
             <div class="photo-footer__editor">
               <button class="photo-footer__item photo-footer__item-pic1"></button>
@@ -168,8 +168,8 @@
               <input type="range" id="brightness" name="brightness" min="1" max="10" step="1">
             </div>
             <div class="photo-footer__btn">
-              <input class="photo-footer__btn-form" type="submit" value="Запостить">
-              <input class="photo-footer__button" type="reset" value="Отмена">
+              <input class="photo-footer__btn-form photo-footer__btn-zakaz" type="submit" value="Запостить">
+              <input class="photo-footer__btn-form photo-footer__btn-cancel" type="reset" value="Отмена">
             </div>
           </form>
         </div>
@@ -178,18 +178,18 @@
    <footer class="form-footer">
       <div class="form-footer__wrapper">
         <div class="form-footer__partner">
-          <img src="img/logo-pink-blue-mobile.svg" width="147px" height="40px">
+          <img class="form-footer__partner-logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40">
         </div>
         <div class="form‐footer__social">
           <div class="social‐links">
-            <a class="social‐link social‐link‐‐vk" href="https://twitter.com/htmlacademy">Мы в твиттере</a>
+            <a class="social‐link social‐link‐‐tv" href="https://twitter.com/htmlacademy">Мы в твиттере</a>
             <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            <a class="social‐link social‐link‐‐in" href="https://www.youtube.com/htmlacademy">Мы в youtube</a>
+            <a class="social‐link social‐link‐‐you" href="https://www.youtube.com/htmlacademy">Мы в youtube</a>
           </div>
         </div>
         <div class="form‐footer__copyright">
           <p class="form-footer__title">Разработано:</p>
-          <a href="#"><img src="img/logo-htmlacademy.svg" width="27px" height="34px"></a>
+          <a class="form-footer__html-btn" href="#"><img src="img/logo-htmlacademy.svg" width="27" height="34"></a>
         </div> 
       </div>
     </footer>
