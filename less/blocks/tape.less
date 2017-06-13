@@ -1,19 +1,23 @@
 .tape__wrapper {
   .container();
+  
 }
 
 .tape-header {
+  display: table;
   height: 237px;
   background-image: url(../img/bg-back-mobile@1x.jpg); 
   background-repeat: no-repeat;
   background-position: 50% 0;
   text-align: center;
-  margin-top: 40px;
   margin-bottom: 46px;
+  
 }
 
 .tape-header__text {
-  padding-top: 98px;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 24px;
@@ -22,12 +26,12 @@
 }
 
 .tape-main__conditions {
-  margin-bottom: 47px;
+  margin-bottom: 49px;
 }
 
 .tape-main__item {
-  margin-bottom: 28px;
-  &:nth-child(2) {
+  margin-bottom: 18px;
+  /*&:nth-child(2) {
     margin-bottom: 24px;
   }
   &:nth-child(3) {
@@ -38,9 +42,9 @@
   }
   &:nth-child(5) {
     margin-bottom: 26px;
-  }
+  }*/
   &:nth-child(6) {
-    margin-bottom: 28px;
+    margin-bottom: 21px;
   }
 }
 
@@ -57,13 +61,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: -4px;
+  
   padding-left: 38px;
   padding-right: 20px;
   background-color: #f2f2f2;
-}
-
-.tape-main__text:nth-child(2) {
-  margin-top: -13px;
 }
 
 .tape-main__text {
@@ -71,14 +73,24 @@
   line-height: 30px;
   color: #283645;
   text-align: center;
+  margin: 0;
+  margin-bottom: 0px;
 }
+
+
+
+
 
 .tape-main__list {
   text-align: left;
   font-size: 14px;
+  margin: 0;
 }
 
 .tape-main__autor-name {
+  margin: 0;
+  margin-top: 17px;
+  margin-right: 4px;
   font-weight: bold;
   color: #283645;
   
@@ -86,11 +98,13 @@
 
 .tape-main__item-date {
   color: #949aa1;
+  margin: 0;
+  margin-top: 17px;
 } 
 
 .tape-main__comment {
-  flex-basis: 90%;
-  margin-top: -15px;
+  flex-basis: 100%;
+  margin: 0;
   color: #283645;
 }
 
@@ -98,14 +112,14 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  
-
+  margin-bottom: 20px;
 }
 
 .heart {
   width: 13px;
   height: 12px;
-  margin-top: 2px;
+  margin: 0;
+  margin-top: 16px;
   margin-right: 18px;
 }
 
@@ -113,7 +127,8 @@
   font-size: 12px;
   color: #d22856;
   text-transform: uppercase;
-  margin-top: -3px;
+  margin: 0;
+  margin-top: 10px;
 }
 
 .tape-main__item-date {
