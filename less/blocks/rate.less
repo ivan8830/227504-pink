@@ -1,26 +1,57 @@
-.rate__conteiner {
+.rate__container {
   .container();
-  height: 380px;
+  position: relative;
+  background-color: #f2f2f2;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: -24px;
+    width: 0;
+    height: 0;
+    border-bottom: 24px solid #f2f2f2;
+    border-left: 320px solid transparent;
+  }
+}
+
+.rate__wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-left: -259px;
+  overflow: hidden;
+  margin-bottom: 117px; 
+  background-color: #f2f2f2;
+}
+
+.rate__item {
+  display: table;
+  width: 280px;
+  flex-shrink: 0;
 }
 
 .rate__item-title {
+  display: table-caption;
   
-  
+  height: 98px;
+  margin-top: 60px;
   background-color: #283645;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
 }
 
-
-.rate__item-title h4 {
+.rate__item-cap {
   font-size: 18px;
-  line-height: 30px;
+  color: #f2f2f2;
+  margin:0;
+  margin-top: 24px;
+  margin-bottom: 5px;
 }
 
-.rate__item-title p {
+.rate__item-price {
   font-size: 24px;
   line-height: 30px;
+  color: #f2f2f2;
+  margin:0;
 }
 
 .rate__item-options{
@@ -35,7 +66,39 @@
 
 .rate__cell {
   display: table-cell;
+  padding-top: 19px;
+  padding-left: 22px;
+  padding-bottom: 12px;
 }
+
+
+.slider__paginator-rate {
+	position: absolute;
+	bottom:100px;
+	width: 200px;
+	height: 20px;
+	
+	
+	text-align: center;
+	z-index: 1000;
+}
+
+.slider-controls label {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin: 0 3px;
+	margin-bottom: 30px;
+	margin-right: 10px;
+	background: #ffffff;
+	border: 6px solid #ffffff;
+	vertical-align: top;
+  
+	border-radius: 50%;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
 
 @media @tablet-widths {
   .rate__conteiner {

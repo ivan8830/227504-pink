@@ -1,16 +1,109 @@
 .photo-footer__wrapper {
   .container();
-  height: 929px;
 }
 
 .photo-footer__slogan {
+  margin-bottom: 79px;
+}
+
+.photo-footer__text {
   font-size: 14px;
+  line-height: 28px;
   text-align: center;
   color: #283645;
+  margin: 0;
+  margin-top: 41px;
+  padding-left: 13px;
+  padding-right: 18px;
+  margin-bottom: -37px;
+  
+}
+
+.photo-footer__bum {
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 .photo-footer__editor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 34px;
+}
+
+.photo-footer__item {
+  background-color: #f2f2f2;
+  border: 0;
+  margin-bottom: 26px;
+}
+
+.photo-footer__item-pic1 {
+  width: 48px;
+  height: 48px;
+  background-image: url(../../img/icon-editor-crop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.photo-footer__item-pic2 {
+  width: 48px;
+  height: 48px;
+  background-image: url(../../img/icon-editor-fill.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.photo-footer__item-pic3 {
+  width: 48px;
+  height: 48px;
+  background-image: url(../../img/icon-editor-contrast.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.photo-footer__scroll {
   text-align: center;
+  margin-bottom: 58px;
+}
+
+.photo-footer__btn {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  margin-bottom: 72px;
+}
+
+.photo-footer__btn-form {
+  width: 281px;
+  height: 55px;
+  margin-bottom: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 18px;
+  font-weight: 700; 
+  text-align: center;
+  vertical-align: middle;
+  border: 3px solid #d22856;
+  border-radius: 28px;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.photo-footer__btn-zakaz {
+  color: #d22856;
+  border-radius: 28px;
+  cursor: pointer;
+}
+
+.photo-footer__btn-cancel {
+  color: #dddfe0;
+  border-color: #dddfe0;
+  cursor: pointer;
 }
 
 @media @tablet-widths {
