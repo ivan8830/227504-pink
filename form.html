@@ -12,7 +12,11 @@
     <header class="page-header">
       <h1 class="page-header__title">PINK</h1>
       <div class="page-header__wrapper">
-        <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="76" height="24">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width:660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="76" height="24">
+        </picture>
         <a href="#"><img class="page-header__burger" src="img/icon-menu-burger.svg" width="50" height="24"></a>
       </div>
       <nav class="main-nav">
@@ -52,21 +56,22 @@
               <div class="form-main__anketa-FIO">
                 <ul class="form-main__anketa-list">
                   <li class="form-main__item-anketa">
-                    <label class="form-main__item-caption" for="surname">Фамилия:</label><br>
+                    <label class="form-main__item-caption" for="surname">Фамилия:</label>
                     <input class="form-main__item-field" type="text" id="surname" placeholder="Укажите фамилию<sup>*</sup>" required>
                   </li>
                   <li class="form-main__item-anketa">
-                    <label class="form-main__item-caption" for="name">Имя:</label><br>
+                    <label class="form-main__item-caption" for="name">Имя:</label>
                     <input class="form-main__item-field" type="text" id="name" placeholder="Введите ваше имя<sup>*</sup>" required>
                   </li>
                   <li class="form-main__item-anketa">
-                    <label class="form-main__item-caption" for="patronymic">Отчество:</label><br>
+                    <label class="form-main__item-caption" for="patronymic">Отчество:</label>
                     <input class="form-main__item-field" type="text" id="patronymic" placeholder="Ну и отчество тоже" required>
                   </li>
                 </ul>
               </div>
               <div class="form-main__achievements-checkbox">
-                <p class="form-main__ach-text">Ваши безбашенные достижения в путешествии</p>
+                <fieldset class="form-main__achievements-checkbox__group">
+                  <legend><p class="form-main__ach-text">Ваши безбашенные достижения в путешествии</p></legend>
                 <ul class="form-main__list">
                   <li class="form-main__item-checkbox">
                     <input type="checkbox" name="selfie" id="selfie" checked>
@@ -93,39 +98,47 @@
                     <label class="form-main__checkbox" for="hotel">Разгромил отель</label>
                   </li>
                 </ul>
+                </fieldset>
               </div>
               <div class="form-main__anketa-contacts">
-                <ul class="form-main__anketa-list">
-                  <li class="form-main__item-contacts">
-                    <label class="form-main__item-caption" for="number">Номер телефона</label><br>
-                    <input class="form-main__item-field" type="tel" id="number"  pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста" required>
-                  </li>
-                  <li class="form-main__item-contacts">
-                    <label class="form-main__item-caption" for="address">Адрес почты</label><br>
-                    <input class="form-main__item-field" type="email" id="address" placeholder="Введите почту<sup>*</sup>" required>
-                  </li>
-                </ul>
+                <fieldset class="form-main__anketa-contacts__group">
+                  <legend class="form-main__anketa-contacts__text">Контактная информация</legend>
+                  <ul class="form-main__anketa-list-contacts">
+                    <li class="form-main__item-contacts">
+                      <label class="form-main__item-caption-contacts" for="number">Номер телефона</label><br>
+                      <input class="form-main__item-field-contacts" type="tel" id="number"  pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста" required>
+                    </li>
+                    <li class="form-main__item-contacts">
+                      <label class="form-main__item-caption-contacts" for="address">Адрес почты</label><br>
+                      <input class="form-main__item-field-contacts" type="email" id="address" placeholder="Введите почту<sup>*</sup>" required>
+                    </li>
+                  </ul>
+                </fieldset>
               </div>
               <div class="form-main__achievements-radio">
-                <p class="form-main__ach-text-radio">С каким приложением путешествовали</p>
-                <ul class="form-main__list-radio">
-                  <li class="form-main__item-radio">
-                    <input type="radio" name="attachment" value="Pink для iOS" id="ios" checked>
-                    <label class="form-main__radio" for="ios">Pink для iOS</label>
-                  </li>
-                  <li class="form-main__item-radio">
-                    <input type="radio" name="attachment" value="Pink для Android" id="android">
-                    <label class="form-main__radio" for="android">Pink для Android</label>
-                  </li>
-                  <li class="form-main__item-radio">
-                    <input type="radio" name="attachment" value="Windows Phone" id="windows">
-                    <label class="form-main__radio" for="windows">Windows Phone</label>
-                  </li>
-                </ul>
+                <fieldset class="form-main__achievements-radio__group">
+                  <legend><p class="form-main__ach-text-radio">С каким приложением путешествовали</p></legend>
+                  <ul class="form-main__list-radio">
+                    <li class="form-main__item-radio">
+                      <input class="form-main__item-radio-field" type="radio" name="attachment" value="Pink для iOS" id="ios" checked>
+                      <label class="form-main__radio" for="ios">Pink для iOS</label>
+                    </li>
+                    <li class="form-main__item-radio">
+                      <input class="form-main__item-radio-field" type="radio" name="attachment" value="Pink для Android" id="android">
+                      <label class="form-main__radio" for="android">Pink на Android</label>
+                    </li>
+                    <li class="form-main__item-radio">
+                      <input class="form-main__item-radio-field" type="radio" name="attachment" value="Windows Phone" id="windows">
+                      <label class="form-main__radio" for="windows">Windows Phone</label>
+                    </li>
+                  </ul>
+                </fieldset>
               </div>
               <div class="form-main__anketa-comment">
-                <label class="form-main__comment" for="emotions" class="form-main__ach-text">Опишите свои эмоции</label>
+                <fieldset class="form-main__anketa-comment__group">
+                  <legend><label class="form-main__comment" for="emotions" class="form-main__ach-text">Опишите свои эмоции</label></legend>
                 <textarea class="form-main__comment-text" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь выражений"></textarea>
+                </fieldset>
               </div>
               <div class="form-main__btn">
                 <input class="btn-green" type="submit" value="Отправить форму">

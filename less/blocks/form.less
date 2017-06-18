@@ -18,7 +18,9 @@
 }
 
 .form-main__anketa-list {
+  display: block;
   list-style: none;
+  margin: 0;
 }
 
 .form-main__anketa-list {
@@ -34,6 +36,7 @@
 }
 
 .form-main__item-anketa {
+  margin-top: 14px;
   margin-bottom: 20px;
   
   &:nth-child(3) {
@@ -42,6 +45,8 @@
 }
 
 .form-main__item-field {
+  display: inline-block;
+	vertical-align: top;
   width: 280px;
   margin-left: -20px;
 	margin-top: 9px;
@@ -59,8 +64,7 @@
 	background-color: #ffffff;
 	border: 2px solid #e5e5e5;
 	border-radius: 3px;
-	display: inline-block;
-	vertical-align: top;
+	
 }
 
 .form-main__achievements-checkbox {
@@ -94,6 +98,7 @@
 }
 
 .form-main__list {
+  margin: 0;
   list-style: none;
   font-size: 18px;
   line-height: 30px;
@@ -113,8 +118,38 @@
   margin-bottom: 40px;
 }
 
+.form-main__item-field-contacts {
+  display: inline-block;
+	vertical-align: top;
+  width: 280px;
+  margin-left: -20px;
+	margin-top: 9px;
+	padding-bottom: 18px;
+  padding-right: 18px;
+  padding-top: 19px;
+  padding-left: 20px;
+	font-size: 18px;
+	line-height: 18px;
+	font-family: "OpenSans", "Arial", sans-serif;
+	color: #283645;
+	background: #ffffff;
+	border: 2px solid #d7dcde;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+	border-radius: 3px;
+}
+
+.form-main__anketa-list-contacts {
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #d22856;
+  text-align: left;
+}
+
 .form-main__achievements-radio {
-  
+  margin: 0;
   padding-top: 26px;
   padding-left: 20px;
   padding-right: 20px;
@@ -150,8 +185,6 @@
 .form-main__anketa-comment {
   text-align: center;
   text-transform: uppercase;
-  
-  
 }
 
 .form-main__comment {
@@ -187,6 +220,8 @@
 }
 
 .form-main__comment-text {
+  display: inline-block;
+	vertical-align: top;
   width: 280px;
   height: 200px;
   margin-left: 0px;
@@ -205,8 +240,6 @@
 	background-color: #ffffff;
 	border: 2px solid #e5e5e5;
 	border-radius: 3px;
-	display: inline-block;
-	vertical-align: top;
 }
 
 .form-main__btn-text sup {
@@ -216,11 +249,196 @@
 
 @media @tablet-widths {
   .form__wrapper {
-    height: 2020px;
   }
-  .form-main__text-hidden {
-    font-size: 14px;
+  
+  .form-main__conditions {
+    margin-bottom: 54px;
+  }
+  
+  .form-main__text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
     text-align: center;
+  }
+  
+  .form-main__text-hidden {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .form-main__interview {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-main__anketa-list {
+    padding: 0;
+    padding-left: 16px;
+  }
+  
+  .form-main__item-anketa {
+    line-height: 80px;
+    margin-bottom: 35px;
+  }
+  
+  .form-main__item-caption {
+    padding-right: 36px;
+  }
+  
+  .form-main__item-field {
+    margin-left: -20px;
+    margin-top: 9px;
+    padding-bottom: 18px;
+    padding-right: 18px;
+    padding-top: 19px;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "OpenSans", "Arial", sans-serif;
+    color: #283645;
+    background: #ffffff;
+    border: 2px solid #d7dcde;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+  }
+  
+  .form-main__anketa-FIO {
+    margin-bottom: 7px;
+  }
+  
+  .form-main__achievements-radio {
+    order: 1;
+    padding-top: 0;
+    margin-bottom: 55px;
+  }
+  
+  .form-main__list-radio {
+    margin: 0;
+    margin-top: 19px;
+    padding: 0;
+    padding-top: 34px;
+    padding-left: 70px;
+  }
+  
+  .form-main__item-radio:nth-child(3) {
+    margin-bottom: 60px;
+  }
+  
+  .form-main__achievements-radio__group {
+    padding: 0;
+  }
+  
+  .form-main__radio {
+    padding-left: 28px;
+  }
+  
+  .form-main__anketa-contacts {
+    order: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 59px;
+  }
+  
+  .form-main__anketa-contacts__group {
+    padding: 0;
+  }
+  
+  .form-main__anketa-contacts__text {
+    text-transform: uppercase;
+    color: #d22856;
+    font-size: 14px;
+  }
+  
+  .form-main__anketa-list-contacts {
+    padding-top: 26px;
+    padding-left: 77px;
+    margin-bottom: 28px;
+    
+  }
+  
+  .form-main__item-caption-contacts {
+    margin-top: -11px;
+  }
+  
+  .form-main__anketa-list {
+    padding-left: 17px;
+  }
+  
+  .form-main__item-field-contacts {
+    margin-left: -20px;
+  }
+  
+  .form-main__item-contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 24px;
+  }
+  
+  .form-main__achievements-checkbox {
+    order: 3;
+    padding-left: 19px;
+    padding-right: 19px;
+    margin-bottom: 51px;
+    background: none;
+      
+  }
+  
+  .form-main__item-checkbox:last-child {
+    margin-bottom: 51px;
+  }
+  
+  .form-main__ach-text {
+    padding-top: 0px;
+  }
+  
+  .form-main__list {
+    padding: 0;
+    padding-left: 74px;
+    padding-top: 49px;
+  }
+  
+  .form-main__achievements-checkbox__group {
+    padding: 0;
+  }
+  
+  .form-main__anketa-comment {
+    order: 4;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+  
+  .form-main__anketa-contacts__group {
+    padding: 0;
+  }
+  
+  .form-main__comment-text {
+    width: 502px;
+    margin-top: 27px;
+    margin-bottom: 31px;
+  }
+  
+  .form-main__btn {
+    order: 5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 19px;
+    padding-right: 19px; 
+    margin-bottom: 21px;
+  }
+  
+  .btn-green {
+    margin-top: 17px;
+  }
+  
+  .form-main__btn-text {
+    text-align: none;
+    margin-top: -18px;
   }
 }
 @media @desktop-widths {
