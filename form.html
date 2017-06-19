@@ -53,15 +53,15 @@
                 <p class="form-main__text-hidden">Пожалуйста, заполните форму ниже:</p>
               </div>
             <form class="form-main__interview" action="https://echo.htmlacademy.ru/" method="post">
-              <div class="form-main__anketa-FIO">
+              <div class="form-main__anketa-fio">
                 <ul class="form-main__anketa-list">
                   <li class="form-main__item-anketa">
                     <label class="form-main__item-caption" for="surname">Фамилия:</label>
-                    <input class="form-main__item-field" type="text" id="surname" placeholder="Укажите фамилию<sup>*</sup>" required>
+                    <input class="form-main__item-field" type="text" id="surname" placeholder="Укажите фамилию*" required>
                   </li>
                   <li class="form-main__item-anketa">
                     <label class="form-main__item-caption" for="name">Имя:</label>
-                    <input class="form-main__item-field" type="text" id="name" placeholder="Введите ваше имя<sup>*</sup>" required>
+                    <input class="form-main__item-field" type="text" id="name" placeholder="Введите ваше имя*" required>
                   </li>
                   <li class="form-main__item-anketa">
                     <label class="form-main__item-caption" for="patronymic">Отчество:</label>
@@ -71,7 +71,7 @@
               </div>
               <div class="form-main__achievements-checkbox">
                 <fieldset class="form-main__achievements-checkbox__group">
-                  <legend><p class="form-main__ach-text">Ваши безбашенные достижения в путешествии</p></legend>
+                  <legend class="form__legend-checkbox">Ваши безбашенные достижения в путешествии</legend>
                 <ul class="form-main__list">
                   <li class="form-main__item-checkbox">
                     <input type="checkbox" name="selfie" id="selfie" checked>
@@ -105,19 +105,19 @@
                   <legend class="form-main__anketa-contacts__text">Контактная информация</legend>
                   <ul class="form-main__anketa-list-contacts">
                     <li class="form-main__item-contacts">
-                      <label class="form-main__item-caption-contacts" for="number">Номер телефона</label><br>
+                      <label class="form-main__item-caption-contacts" for="number">Номер телефона</label>
                       <input class="form-main__item-field-contacts" type="tel" id="number"  pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста" required>
                     </li>
                     <li class="form-main__item-contacts">
-                      <label class="form-main__item-caption-contacts" for="address">Адрес почты</label><br>
-                      <input class="form-main__item-field-contacts" type="email" id="address" placeholder="Введите почту<sup>*</sup>" required>
+                      <label class="form-main__item-caption-contacts" for="address">Адрес почты</label>
+                      <input class="form-main__item-field-contacts" type="email" id="address" placeholder="Введите почту*" required>
                     </li>
                   </ul>
                 </fieldset>
               </div>
               <div class="form-main__achievements-radio">
                 <fieldset class="form-main__achievements-radio__group">
-                  <legend><p class="form-main__ach-text-radio">С каким приложением путешествовали</p></legend>
+                  <legend class="form__legend-radio">С каким приложением путешествовали</legend>
                   <ul class="form-main__list-radio">
                     <li class="form-main__item-radio">
                       <input class="form-main__item-radio-field" type="radio" name="attachment" value="Pink для iOS" id="ios" checked>
@@ -136,13 +136,13 @@
               </div>
               <div class="form-main__anketa-comment">
                 <fieldset class="form-main__anketa-comment__group">
-                  <legend><label class="form-main__comment" for="emotions" class="form-main__ach-text">Опишите свои эмоции</label></legend>
+                  <label class="form-main__comment" for="emotions" class="form-main__ach-text">Опишите свои эмоции</label>
                 <textarea class="form-main__comment-text" id="emotions" name="emotions" placeholder="Можно прям в красках, не стесняясь выражений"></textarea>
                 </fieldset>
               </div>
               <div class="form-main__btn">
                 <input class="btn-green" type="submit" value="Отправить форму">
-                <p class="form-main__btn-text"><sup>*</sup> — обязательные поля</p>
+                <p class="form-main__btn-text"><span>*</span> — обязательные поля</p>
               </div>
             </form>
           </div>
