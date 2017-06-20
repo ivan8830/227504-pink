@@ -16,7 +16,6 @@
   margin-top: -68px;
   padding-top: 16px;
   box-sizing: border-box;
-  
 }
 
 .tape-header__text {
@@ -33,15 +32,18 @@
 }
 
 .tape-main__item {
-  margin-bottom: 20px;
-  /*&:nth-child(3) {
-    margin-bottom: 25px;
+  margin-bottom: 19px;
+  &:nth-child(2) {
+    margin-bottom: 21px;
+  }
+  &:nth-child(3) {
+    margin-bottom: 20px;
   }
   &:nth-child(4) {
-    margin-bottom: 25px;
-  }*/
-  &:nth-child(6) {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
+  }
+  &:nth-child(5) {
+    margin-bottom: 21px;
   }
   &:last-child {
     margin-bottom: 0;
@@ -50,22 +52,11 @@
 
 .tape-main__panorama {
   display: block;
-  margin-left: -20px;
 }
 
 .tape-main__foto {
   display: block;
   text-align: center;
-}
-
-.tape-main__content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-top: 18px;
-  padding-left: 18px;
-  
-  background-color: #f2f2f2;
 }
 
 .tape-main__text {
@@ -77,13 +68,65 @@
   margin-bottom: 0px;
 }
 
+.tape-main__content-panorama {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 18px;
+  padding-left: 18px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #f2f2f2;
+}
+
+.tape-main__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 18px;
+  padding-left: 18px;
+  background-color: #f2f2f2;
+}
+
+.tape-main__list-panorama {
+  text-align: left;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.tape-main__item-panorama {
+    position: relative;
+    &::after {
+    content: "ПАНОРАМА ДНЯ";
+    position: absolute;
+    font-size: 12px;
+    top: 0px;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    padding-top: 6px;
+    background: #d22856;
+    color: aliceblue;
+    text-align: center;
+    box-sizing: border-box;
+    }
+}
+
 .tape-main__list {
   text-align: left;
   font-size: 14px;
   margin: 0;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 41px;
+  margin-bottom: 42px;
+}
+
+.tape-main__autor-name-panorama {
+  margin: 0;
+  margin-right: 4px;
+  font-weight: bold;
+  color: #283645;
 }
 
 .tape-main__autor-name {
@@ -93,15 +136,41 @@
   color: #283645;
 }
 
+.tape-main__item-date-panorama {
+  color: #949aa1;
+  margin: 0;
+} 
+
+
 .tape-main__item-date {
   color: #949aa1;
   margin: 0;
 } 
 
+.tape-main__comment-panorama {
+  flex-basis: 100%;
+  margin: 0;
+  color: #283645;
+}
+
 .tape-main__comment {
   flex-basis: 100%;
   margin: 0;
   color: #283645;
+}
+
+.tape-main__heart-panorama {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.tape-main__heart-panorama {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 20px;
 }
 
 .tape-main__heart {
@@ -111,12 +180,28 @@
   margin-bottom: 20px;
 }
 
+.heart-panorama {
+  width: 13px;
+  height: 12px;
+  margin: 0;
+  margin-top: 16px;
+  margin-right: 18px;
+}
+
 .heart {
   width: 13px;
   height: 12px;
   margin: 0;
   margin-top: 16px;
   margin-right: 18px;
+}
+
+.tape-main__heart-text-panorama {
+  font-size: 12px;
+  color: #d22856;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 10px;
 }
 
 .tape-main__heart-text {
@@ -132,32 +217,28 @@
 @media @tablet-widths {
   .tape-header {
     display: flex;
-    height: 440px;
+    min-height: 440px;
     background-image: url(../../img/bg-back-tablet@1x.jpg); 
     background-repeat: no-repeat;
     background-position: 50% -1px;
     margin-bottom: 92px;
+    margin-top: -111px;
+    padding-top: 44px;
     text-align: center;
   }
   
   .tape-header__text {
     font-size: 50px;
-    line-height: 50px;
+    line-height: 59px;
     color: #ffffff;
-    
   }
   
   .tape-main__conditions {
-    margin-bottom: 75px;
+    margin-bottom: 76px;
   }
   
   .tape-main__text {
     font-size: 18px;
-  }
-  
-  .tape-main__gallery {
-    padding-left: 12px;
-    padding-right: 11px;
   }
   
   .tape-main__list {
@@ -165,26 +246,22 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 47px;
   }
   
-  .tape-main__item:not(:first-child) {
+  .tape-main__item {
     width: 300px;
   }
   
-  .tape-main__item:first-child {
-    position: relative;
-    margin-bottom: 75px;
-    &::after {
-    content: "ПАНОРАМА ДНЯ";
-    position: absolute;
+  .tape-main__list-panorama {
+    margin-bottom: 64px;
+  }
+  
+  .tape-main__item-panorama::after {
     top: 57px;
-    right: 39px;
-    width: 140px;
-    height: 36px;
-    background: #d22856;
-    color: aliceblue;
-    text-align: center;
-    }
   }
   
   .tape-main__panorama {
@@ -193,53 +270,45 @@
     box-sizing: border-box;
   }
   
-  .tape-main__item:nth-child(1) 
-  .tape-main__content {
-    margin-top: -5px;
-    padding-top: 7px;
-    padding-left: 68px;
-  }
-  
-  .tape-main__item:nth-child(1)
-  .tape-main__heart {
+  .tape-main__heart-panorama {
     order: 1;
-    margin-top: 8px;
-    margin-bottom: -1px;
+    margin: 0;
+    padding-top: 1px;
+    padding-left: 20px;
     flex-direction: row-reverse;
     justify-content: flex-end;
   }
   
-  .tape-main__item:nth-child(1)
-  .tape-main__comment {
+  .tape-main__comment-panorama {
     order: 2;
   }
   
-  .tape-main__item:nth-child(1)
-  .tape-main__item-date {
-    margin-right: 303px;
+  .tape-main__item-date-panorama {
+    margin-right: 283px;
   }
   
-  .tape-main__item:nth-child(1)
-  .tape-main__heart-text {
+  .tape-main__heart-text-panorama {
+    margin: 0;
     margin-right: 14px; 
   }
   
-  .tape-main__item:nth-child(1)
-  .tape-main__autor-name {
-    margin-top: 18px;
-  }
-  
-  .tape-main__item:nth-child(1)
-  .tape-main__item-date {
-    margin-top: 18px;
-  }
-  
-  .tape-main__content {
+  .tape-main__content-panorama {
     padding: 0;
     margin: 0;
-    padding-left: 28px;
-    margin-top: -7px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 27px;
     padding-top: 24px;
+    padding-bottom: 10px;
+  }
+  
+  .tape-main__autor-name-panorama {
+    margin-right: 5px;
+  }
+  
+  .heart-panorama {
+    margin: 0;
+    margin-top: 5px;
   }
   
   .tape-main__foto {
@@ -247,14 +316,40 @@
     height: 300px;
   }
   
-  .tape-main__item:not(:first-child) {
-    margin-bottom: 25px;
-    padding: 0;
+  .tape-main__content {
+    /*min-height: 120px;*/
+    padding-top: 24px;
+    padding-left: 28px;
+    padding-right: 20px;
   }
   
+  .tape-main__item {
+    margin-bottom: 23px;
+    padding: 0;
+  }
+  .tape-main__content-information {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    min-height: 85px;
+  }
   .tape-main__heart {
+    flex-basis: 100%;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0;
+    padding-right: 12px;
+    padding-bottom: 20px;
+  }
+  
+  .heart {
+    margin: 0;
+    padding-bottom: 8px;
+  }
+  
+  .tape-main__heart-text {
+    margin: 0;
   }
   
   .tape-main__autor-name {
@@ -264,6 +359,10 @@
   
   .tape-main__item-date {
     margin: 0;
+  }
+  
+  .tape-main__comment {
+    flex-grow: 2;
   }
 }
 @media @desktop-widths {

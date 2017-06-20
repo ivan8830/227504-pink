@@ -12,7 +12,11 @@
     <header class="page-header">
       <h1 class="page-header__title">PINK</h1>
       <div class="page-header__wrapper">
-        <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="76" height="24">
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width:660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="76" height="24">
+        </picture>
         <a href="#"><img class="page-header__burger" src="img/icon-menu-burger.svg" width="50" height="24"></a>
       </div>
       <nav class="main-nav">
@@ -36,7 +40,14 @@
 			<section class="intro">
         <div class="intro__wrapper">
           <div class="intro__logo">
-            <img class="intro__hand" src="img/iphone-hand-mobile@1x.png" width="257" height="286">
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/iphone-hand-desktop@1x.png">
+              <source media="(min-width:1200px)" srcset="img/iphone-hand-desktop@2x.png">
+              <source media="(min-width:660px)" srcset="img/iphone-hand-tablet@1x.png">
+              <source media="(min-width:660px)" srcset="img/iphone-hand-tablet@2x.png">
+              <source media="(min-width:320px)" srcset="img/iphone-hand-mobile@2x.png">
+              <img class="intro__hand" src="img/iphone-hand-mobile@1x.png" width="257" height="286">
+            </picture>
           </div>
           <div class="intro__txt">  
             <p class="intro__text-td">Взгляни на жизнь иначе

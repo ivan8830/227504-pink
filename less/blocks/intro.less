@@ -32,10 +32,18 @@ h3 {
 .intro__logo {
   height: 462px;
   width: 320px;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url(../../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0%;
-  
+}
+
+@media 
+  (min-resolution: 144dpi), 
+  (min-resolution: 1.5dppx) {
+    .intro__logo {
+      background-image: url("../../img/bg-back-mobile@2x.jpg");
+      background-size: 700px auto;
+    }
 }
 
 .intro__hand {
@@ -118,13 +126,28 @@ h3 {
   .intro__wrapper {
     min-width: 660px;
     flex-direction: row-reverse;
+    margin-top: -169px;
+    background-color: none;
+    height: 729px;
+    width: 100%;
+    background-image: url(../../img/bg-back-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: right 50% top 485%;
+    background-size: 179%;
   }
   
   .intro__logo {
-    position: relative;
-    z-index: 0;
-    
-  }
+  
+}
+
+@media 
+  (min-resolution: 144dpi), 
+  (min-resolution: 1.5dppx) {
+    .intro__logo {
+      background-image: url("../../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+}
   
   .intro__text-td {
     font-size: 40px;
