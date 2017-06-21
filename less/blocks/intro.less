@@ -126,31 +126,59 @@ h3 {
   .intro__wrapper {
     min-width: 660px;
     flex-direction: row-reverse;
-    margin-top: -169px;
-    background-color: none;
-    height: 729px;
+    margin-top: -113px;
+    margin-bottom: 61px;
+    background-color: transparent;
+    height: 730px;
     width: 100%;
     background-image: url(../../img/bg-back-tablet@1x.jpg);
     background-repeat: no-repeat;
-    background-position: right 50% top 485%;
-    background-size: 179%;
+    background-position: right 50% top 449%;
+    background-size: 660px;
+    padding-top: 0;
+    overflow: hidden;
   }
   
   .intro__logo {
+    position: relative;
+    z-index: 19;
+    height: 545px;
+    width: 660px;
+    margin-top: 200px;
+    margin-left: -250px;
+    background-image: url(../../img/iphone-hand-tablet@1x.png);
+    background-repeat: no-repeat;
+    background-position: right 50% top 449%;
+  }
   
-}
+  .intro__hand {
+    width: 700px;
+    height: 546px;
+    
+    
+  }
 
 @media 
   (min-resolution: 144dpi), 
   (min-resolution: 1.5dppx) {
-    .intro__logo {
+    .intro__wrapper {
       background-image: url("../../img/bg-back-tablet@2x.jpg");
       background-size: 1200px auto;
     }
 }
   
+  .intro__txt {
+    position: relative;
+    z-index: 20;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
+  }
+  
   .intro__text-td {
     font-size: 40px;
+    line-height: 51px;
+    color: #ffffff;
   }
   
   .intro__text {

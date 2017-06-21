@@ -12,7 +12,30 @@
 }
 
 @media @tablet-widths {
+  .promo__wrapper {
+    position: relative;
+    z-index: 999999;
+    overflow: hidden;
+    background: url("../../img/bg-triangle-white.svg");
+    background-repeat: no-repeat ;
+    background-position:  0 130px;
+    background-color: #ffffff;
+    background-size: 200% 100%;
+  }
   
+  .promo__text {
+    font-size: 40px;
+    line-height: 28px;
+    color: #1d2631;
+    text-align: center;
+    margin-bottom: 11px;
+    &:nth-child(2) {
+      line-height: 47px;
+      padding-left: 57px;
+      padding-right: 57px;
+    }
+  }
+
 }
 
 @media @desktop-widths {
