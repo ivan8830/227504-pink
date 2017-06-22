@@ -39,16 +39,16 @@
 		<main class="page-main">
 			<section class="intro">
         <div class="intro__wrapper">
-          <div class="intro__logo">
-            <!--<picture>
+          <!--<div class="intro__logo">
+            <picture>
               <source media="(min-width:1200px)" srcset="img/iphone-hand-desktop@1x.png">
               <source media="(min-width:1200px)" srcset="img/iphone-hand-desktop@2x.png">
               <source media="(min-width:660px)" srcset="img/iphone-hand-tablet@1x.png">
               <source media="(min-width:660px)" srcset="img/iphone-hand-tablet@2x.png">
               <source media="(min-width:320px)" srcset="img/iphone-hand-mobile@2x.png">
               <img class="intro__hand" src="img/iphone-hand-mobile@1x.png" width="257" height="286">
-            </picture>-->
-          </div>
+            </picture>
+          </div>-->
           <div class="intro__txt">  
             <p class="intro__text-td">Взгляните на жизнь иначе
             </p>
@@ -96,7 +96,17 @@
       </section>
       <section class="effect">
         <div class="effect__wrapper">
-          <div class="effect__clock"></div>
+          <div class="effect__clock">
+            
+            <svg class="effect__clock-timer" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="235px" height="340px" viewBox="0 0 298 345.097" enable-background="new 0 0 298 345.097" xml:space="preserve">
+            <path class="effect__clock-timer" d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
+            </svg>
+            
+            <svg class="effect__clock-diagram" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="22.5 69.048 253 253" enable-background="new 22.5 69.048 253 253" xml:space="preserve">
+            <path class="effect__clock-diagram" fill="#231F20" d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z"/>
+            </svg>
+            <p class="effect__clock-text">24</p>
+          </div>
           <div class="effect__block">
             <h3 class="effect__block-caption">Эффект на 24 часа!</h3>
             <p class="effect__block-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
@@ -110,6 +120,7 @@
           <div class="reviews__wrapper slider">
             <div class="reviews__item slider__item">
               <h3 class="reviews__name">Николай Петров</h3>
+              <p class="reviews__name-info">25 лет, водитель трамвая</p>
               <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
             </div>
             <div class="reviews__item slider__item">
@@ -136,65 +147,45 @@
          <section class="rate">
            <div class="rate__container">
              <div class="rate__wrapper slider">
+               <div class="rate__item rate__options">
+                 <ul class="rate__content-list">
+                  <li class="rate__content-item rate__options-item">Розовый фильтр</li>
+                  <li class="rate__content-item rate__options-item">Смайлики</li>
+                  <li class="rate__content-item rate__options-item">Комментарий</li>
+                 </ul>
+               </div>
                <div class="rate__item slider__item">
                  <div class="rate__item-title">
                    <h4 class="rate__item-cap">База</h4>
                    <p class="rate__item-price">1,99 USD</p>
                  </div>
-                 <div class="rate__item-options ">
-                   <div class="rate__row">
-                     <span class="rate__cell">Розовый фильтр</span>
-                     <span class="rate__cell">check</span>
-                   </div>
-                   <div class="rate__row">
-                     <span class="rate__cell">Смайлики</span>
-                     <span class="rate__cell">cross</span>
-                   </div>
-                   <div class="rate__row">
-                     <span class="rate__cell">Комментарий</span>
-                     <span class="rate__cell">cross</span>
-                   </div>     
-                 </div>
+                  <ul class="rate__content-list">
+                    <li class="rate__content-item ">Розовый фильтр</li>
+                    <li class="rate__content-item">Смайлики</li>
+                    <li class="rate__content-item rate__cross">Комментарий</li>
+                  </ul>
                </div>
                <div class="rate__item slider__item">
                  <div class="rate__item-title">
                    <h4 class="rate__item-cap">Стандарт</h4>
                    <p class="rate__item-price">3,99 USD</p>
                  </div>
-                 <div class="rate__item-options">
-                   <div class="rate__row">
-                     <span class="rate__cell">Розовый фильтр</span>
-                     <span class="rate__cell">check</span>
-                   </div>
-                   <div class="rate__row">
-                     <span class="rate__cell">Смайлики</span>
-                     <span class="rate__cell">check</span>
-                   </div>
-                   <div class="rate__row">
-                     <span class="rate__cell">Комментарий</span>
-                     <span class="rate__cell">cross</span>
-                   </div>     
-                 </div>
+                 <ul class="rate__content-list">
+                  <li class="rate__content-item">Розовый фильтр</li>
+                  <li class="rate__content-item">Смайлики</li>
+                  <li class="rate__content-item">Комментарий</li>
+                 </ul>
                </div>
                <div class="rate__item slider__item">
                  <div class="rate__item-title">
                    <h4 class="rate__item-cap">Анлим</h4>
                    <p class="rate__item-price">9,99 USD</p>
                  </div>
-                 <div class="rate__item-options">
-                   <div class="rate__row">
-                     <span class="rate__cell">Розовый фильтр</span>
-                     <span class="rate__cell">check</span>
-                   </div>
-                   <div class="rate__row">
-                     <span class="rate__cell">Смайлики</span>
-                     <span class="rate__cell">check</span>
-                   </div>
-                   <div class="rate__row">
-                     <span class="rate__cell">Комментарий</span>
-                     <span class="rate__cell">check</span>
-                   </div>     
-                 </div>
+                 <ul class="rate__content-list">
+                  <li class="rate__content-item">Розовый фильтр</li>
+                  <li class="rate__content-item">Смайлики</li>
+                  <li class="rate__content-item">Комментарий</li>
+                 </ul>
                </div>
              </div>
              <div class="rate__pagination slider__paginator-rate">

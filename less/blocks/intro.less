@@ -126,62 +126,61 @@ h3 {
   .intro__wrapper {
     min-width: 660px;
     flex-direction: row-reverse;
-    margin-top: -113px;
+    margin-top: -112px;
     margin-bottom: 61px;
     background-color: transparent;
     height: 730px;
-    width: 100%;
-    background-image: url(../../img/bg-back-tablet@1x.jpg);
+    background-image: url(../../img/iphone-hand-tablet@1x.png), url(../../img/bg-back-tablet@1x.jpg);
     background-repeat: no-repeat;
-    background-position: right 50% top 449%;
-    background-size: 660px;
+    background-position: 50% 100%, right 50% top 449%;
+    background-size: 700px, 1200px;
     padding-top: 0;
     overflow: hidden;
-  }
-  
-  .intro__logo {
-    position: relative;
-    z-index: 19;
-    height: 545px;
-    width: 660px;
-    margin-top: 200px;
-    margin-left: -250px;
-    background-image: url(../../img/iphone-hand-tablet@1x.png);
-    background-repeat: no-repeat;
-    background-position: right 50% top 449%;
-  }
-  
-  .intro__hand {
-    width: 700px;
-    height: 546px;
-    
+    justify-content: flex-end;
+    align-items: center;
     
   }
-
+  
 @media 
   (min-resolution: 144dpi), 
   (min-resolution: 1.5dppx) {
     .intro__wrapper {
-      background-image: url("../../img/bg-back-tablet@2x.jpg");
-      background-size: 1200px auto;
+      //background-image: url("../../img/bg-back-tablet@2x.jpg");
+      //background-size: 1200px auto;
     }
 }
   
   .intro__txt {
-    position: relative;
-    z-index: 20;
+    justify-content: center;
+    align-content: flex-start;
+    width: 300px;
+    padding-top: 99px;
     padding-right: 40px;
-    padding-left: 40px;
+    padding-left: 20px;
     text-align: center;
   }
   
   .intro__text-td {
+    padding-left: 33px;
+    padding-right: 37px;
+    margin-bottom: 30px;
     font-size: 40px;
-    line-height: 51px;
+    line-height: 48px;
     color: #ffffff;
   }
   
   .intro__text {
-    font-size: 14px;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  
+  .intro__btn {
+    width: 301px;
+    margin-bottom: 10px;
+  }
+  
+  .intro__os {
+    padding-left: 47px;
+    margin-bottom: 33px;
   }
 }
